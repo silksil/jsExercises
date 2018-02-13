@@ -1,27 +1,3 @@
-// Create a new class called EmailList. The constructor function should take in one parameter, "name", and return an instance which contains the following:
-// name, the name of the email list
-// list, an array of all the emails in that list. Note that initially, the array will be empty.
-// Add a function to the EmailList's prototype. This function should be called "addEmail", and it should take one parameter, the email address, and add it to the "list" array of the instance.
-// Add another function to the prototype, called "sendEmailToAll". 
-// This function should take in one parameter: the text of the email, and then "send an email to each address".
-
-function newEmailList (name) {
-	this.name = name
-	this.list = []
-	this.addEmail = function (email){
-		for (var i = 0; i < email.length; i++) 
-		this.list.push(email[i])
-	}
-	this.sendEmailToAll = function(emailText) {
-		console.log("Send an email to each address:" + this.list + "\nEmail content:", emailText)
-		}	
-}
-
-var emailListRoomies = new newEmailList ('roomies')
-emailListRoomies.addEmail(["silkreulen@gmail.com", "daveknipmeijer@gmail.com"])
-emailListRoomies.sendEmailToAll("Hi Bruh. Hope you are good. Luv")
-
-
 // Given a string, create a function that returns the last character in that string.
 // example:
 
